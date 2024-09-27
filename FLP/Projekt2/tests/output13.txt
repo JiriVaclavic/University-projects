@@ -1,0 +1,22 @@
+S             aaacaa
+ S            aaacaa
+  S           aaacaa
+   S          aaacaa
+    S         aaacaa
+     S        aaacaa
+      S       aaacaa
+       S      aaacaa
+        S     aaacaa
+         S    aaacaa
+          S   aaacaa
+           S  aaacaa
+            S aaacaa
+             Saaacaa
+             S aacaa
+              Saacaa
+              S acaa
+               Sacaa
+               Bacaa
+               Bbcaa
+               bBcaa
+               bFcaa

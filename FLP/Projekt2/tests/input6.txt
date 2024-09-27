@@ -1,0 +1,13 @@
+S p Q R
+Q r Q R
+Q o Q R
+Q l Q R
+Q g Q R
+Q i Q R
+Q s Q R
+Q f Q R
+Q f Q R
+Q f Q L
+Q u Q R
+Q n F n
+prologisfun
