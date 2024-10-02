@@ -1,0 +1,23 @@
+Soubor:	    README
+Datum:	    9.4.2023
+Autor:	    Bc. Jiri Vaclavic, xvacla31@stud.fit.vutbr.cz
+Projekt:    T0I, Senzoricky modul
+Popis:	    Vytvorit senzoricky modul s platformou ESP32, ktery dokaze zaznamenavat teplotu a vlhkost 
+
+------------------------------------------------------------------------------------
+
+Popis kodu:
+    - V app_main je zavolana funkce wifi_init_sta, ktera nastavi pripojeni k wifi, je nutne v souboru readSensor.c
+        zadat EXAMPLE_ESP_WIFI_SSID a EXAMPLE_ESP_WIFI_PASS, tedy nazev a heslo wifi site
+    - Dale je volana funkce obtain_time(), ktera synchronizuje cas pomoci SNTP se serverem pool.ntp.org
+    - Dale je vytvoren task readSensor_task, ktery je implementovan ve funkce readSensor
+    - task readSensor_task inicializuje DHT11 senzor na pinu 4 a pak cyklicky cte teplotu a vlhkost,
+        cely retezec vcetne casu je vypsan na seriovou linku.
+    - Ze seriove linky z COM3 data ctu pomoci Putty, kde nasledni data ukladam do csv souboru.
+    - Priklad vystupu (cas, teplota, vlhkost): Sun Apr  8 20:39:46 2023, 22, 41
+
+- Model neuronove site jsem natrenoval v pythonu a pote jej prevedl prikazem xxd -i converted_model.tflite > model_data.c
+- Data pro trenovani jsem stahnul https://www.kaggle.com/datasets/kukuroo3/room-occupancy-detection-data-iot-sensor?resource=download,
+    abych jich mel dostatek.
+- Prikladam python notebook, ktery jsem pouzil pro vytvoreni sveho modelu "create_neural_model.ipynb", je to upraveny kod z navodu, 
+    ktery byl u zadani projektu.
