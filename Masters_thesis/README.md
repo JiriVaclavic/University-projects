@@ -38,7 +38,7 @@ The project includes firmware for the ESP32, which handles sensor data collectio
    - Mount the stepper motors on the frames for honey extraction.
 
 2. **Software Setup:**
-   - Upload the `DIPLOMKA-OPONENT.ino` code to the ESP32 using the Arduino IDE or PlatformIO.
+   - Upload the `firmware_code.ino` code to the ESP32 using the Arduino IDE or PlatformIO.
    - Ensure the correct libraries are installed:
      - `WiFi.h` for ESP32
      - `PubSubClient.h` for MQTT communication
